@@ -1,11 +1,11 @@
-fetch('/partials/header.html')
+fetch('./partials/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
     });
 
 
-fetch('/partials/footer.html')
+fetch('./partials/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer').innerHTML = data;
